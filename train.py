@@ -141,7 +141,7 @@ if "__main__" == __name__:
             out_dir_run = os.path.join(output_dir, job_name)
         else:
             out_dir_run = os.path.join("./output", job_name)
-        os.makedirs(out_dir_run, exist_ok=False)
+        os.makedirs(out_dir_run, exist_ok=True)
 
     cfg_data = cfg.dataset
 
